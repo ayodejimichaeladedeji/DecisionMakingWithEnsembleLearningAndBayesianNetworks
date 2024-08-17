@@ -23,6 +23,6 @@ X_res, y_res = data_balance(X_encoded, y)
 
 X_train, X_test, y_train, y_test = split_train_test(X_res, y_res)
 
-naive_bayes(X_train, X_test, y_train, y_test)
+# naive_bayes(X_train, X_test, y_train, y_test)
 
 gradient_boost(X_train, X_test, y_train, y_test)
