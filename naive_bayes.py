@@ -1,7 +1,7 @@
 import pandas as pd
 from collections import Counter
 from models.naive_bayes import naive_bayes
-from models.ensemble_learning import gradient_boost
+# from models.ensemble_learning import gradient_boost
 from preprocessing.preprocessor import encoder, split_train_test, data_balance
 
 transactions_df = pd.read_csv('transactions.csv')
@@ -23,6 +23,6 @@ X_res, y_res = data_balance(X_encoded, y)
 
 X_train, X_test, y_train, y_test = split_train_test(X_res, y_res)
 
-# naive_bayes(X_train, X_test, y_train, y_test)
+naive_bayes(X_train, X_test, y_train, y_test)
 
-gradient_boost(X_train, X_test, y_train, y_test)
+# gradient_boost(X_train, X_test, y_train, y_test)

@@ -4,7 +4,7 @@ from sklearn.ensemble import VotingClassifier
 from sklearn.metrics import classification_report
 from sklearn.ensemble import GradientBoostingClassifier, RandomForestClassifier
 
-def gradient_boost(X_train, X_test, y_train, y_test):
+def ensemble_learning(X_train, X_test, y_train, y_test):
 
     model1 = GradientBoostingClassifier()
     model2 = RandomForestClassifier()
